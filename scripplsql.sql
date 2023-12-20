@@ -2,14 +2,22 @@
 
 
 -- DEFINICION DE VARAIBLES
-
+SET SERVEROUTPUT ON
+DECLARE
+    NUMEROONE NUMBER:=7;
+	DIA DATE:= '10-OCT-23';
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(NUMEROONE+5);
+    DBMS_OUTPUT.PUT_LINE(SYSDATE);
+    DBMS_OUTPUT.PUT_LINE(dia);
+    DBMS_OUTPUT.PUT_LINE(dia+3);
+END;
 
 
 SET SERVEROUTPUT ON
 DECLARE
 	-- DECLARANDO VARIABLEES
-     name  VARCHAR2(100);
-																																																						 lastname varchar2(100);
+     	name  VARCHAR2(100);																																																				 lastname varchar2(100);
 		TEMPORAL INTEGER;
 		p_resultado INTEGER;
 		TEMPORALdos INTEGER;
@@ -87,6 +95,122 @@ BEGIN
     insertar_usuario('John', 'Doe', 'john.doe@example.com', 30);
 END;
 /
+
+
+
+-- CONSULTAS DML
+
+SELECT * FROM USUARIOS;
+ 
+
+
+
+SELECT * FROM AV.GEOGRAPHY_DIM
+
+
+
+DESCRIBE AV.SALES_FACT;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
